@@ -1,0 +1,425 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>primera aplicacion</title>
+
+ <!--grupo CSS-->
+ <link rel="stylesheet" href="css/tema-app1.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+ <!--grupo Java Script-->
+ <script src="js/jquery-1.11.2.min.js"></script>
+ <script src="js/jquery.mobile-1.4.5.min.js"></script>
+ <script src="js/acciones.js"></script>
+ <script src="js/phonegap.js"></script>
+ <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+ </script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/sustitucion1.jpg','imagenes/Honor-4X.jpg','imagenes/telefonos.jpg','imagenes/ejemploh.jpg','imagenes/xd.jpg')">
+
+ <div data-role="page" id="Principal" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"  data-back-btn-theme="b">
+   <h1>Telefonia Clelular en México</h1>
+   </div>
+   <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1>Telefono celular</h1>
+      <div>
+       <p>Antes y ahora de los telefonos celulares: </p>
+       <br>
+     </div>
+     <div>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('telimagen','','imagenes/sustitucion1.jpg',1)"><img src="imagenes/era.jpeg" width="384" height="480" id="telimagen"></a> </div>
+    </div>
+   </div>
+   <div>
+     <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>DEFINICION</h2>
+       <p>Definicion de telefono celular</p>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+        <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Historia</h2>
+        <p>Historia del telefono celular</p>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Clasificación</h2>
+       <p>Clasificación de telefonos celulares</p>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Compañias telefonicas</h2>
+        <p>Compañias que ofrecen servicio celular en México</p>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Telefonos de futuro</h2>
+        <p>Proyectos avanzados de la telefonia celular</p>
+      </a>
+     </li>
+     </ul>
+   </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+     <div>
+       <img src="imagenes/logo.png" width="46" height="46">
+     </div>
+     <div>
+       <h4>Aplicacion Dos</h4>
+       <h4>Francisco Eduardo Chantes Nuñez</h4>
+     </div>
+   </div>
+  </div>
+  <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>Definición</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1>Que es?</h1>
+      <div>
+       <br>
+     </div>
+     <div>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('defimage','','imagenes/Honor-4X.jpg',1)"><img src="imagenes/definicion.jpg" width="340" height="340" id="defimage"></a> </div>
+   
+    <div data-role="content" align="center">
+      <div>
+         <h2>¿Que es un telefono celular?</h2>
+         <p>Entendemos por telefonía celular a aquel sistema de comunicación que se da a partir del uso de elementos pequeños o 'células' que se conocen como celulares, que puede hacer y recibir llamadas a través de una portadora de radiofrecuencia mientras el usuario se está moviendo dentro de un área de servicio telefónico. El enlace de radiofrecuencia establece una conexión con los sistemas de conmutación de un operador de telefonia movil.</p>
+      </div>
+    </div>
+     </div>
+   </div>
+   <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1>Ejemplos</h1>
+      <div>
+       <p>Se muestran ejemplos de telefonos celulares: </p>
+       <br>
+     </div>
+     <div>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('ejemplodef','','imagenes/telefonos.jpg',1)"><img src="imagenes/teleperfil.jpg" width="970" height="609" id="ejemplodef"></a> </div>
+    </div>
+   </div>
+    <div data-role="footer" data-theme="b" data-position="fixed">
+       <h4>Aplicacion Dos, FECHN</h4>
+       </div>
+    </div> 
+   </div>  
+   
+  <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b"> 
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Historia del telefono celular</h1>
+   </div>
+   <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1>Inicios del telefono celular</h1>
+      <div>
+      
+      <div data-role="content" align="center">
+   <div>
+       <p>En aquellos primeros tiempos, eran utilizadas las bandas de HF y VHF, con el fin de ofrecerle a la población un medio de comunicación móvil, que podían llevar consigo al salir de sus casas y oficinas, lo que implicaba lograr mantener una comunicación constante. </p>
+       
+       <p>En aquellos principios de la telefonía móvil, la respuesta de los consumidores no fue del todo satisfactoria. Esto principalmente se debía al exagerado tamaño y peso de los primeros equipos de telefonía celular, y por supuesto también al elevado valor que poseían los aparatos, que están más allá de las posibilidades económicas de la clase social media norteamericana. </p>
+       
+       <p>A pesar de su escasa popularidad, estos equipos se mantuvieron vigentes durante varias décadas, precisamente desde el año 1946 hasta 1985, cuando finalmente llegaron importantes cambios tecnológicos al mercado, que lograron hacer evolucionar las comunicaciones móviles a pasos agigantados. En la misma década, precisamente en el año 1986, la misma compañía incorporó nuevos avances al sistema de comunicación, logrando llevar al mismo al nivel NMT 900, que si bien funcionaba de manera similar a la versión anterior, lo cierto es que lograba alcanzar frecuencias superiores, lo que significó una apertura del mercado de la telefonía móvil. 
+        </p>
+       <br>
+     </div>
+     <div>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('generacion1','','imagenes/ejemploh.jpg',1)"><img src="imagenes/inicios.jpg" width="450" height="631" id="generacion1"></a> </div>
+    </div>
+   </div>
+   </div>
+    </div>
+    
+    <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1>Telefono Celular en el siglo XXI</h1>
+      <div>
+         <div data-role="content" align="center">
+   <div>
+      <h2>Tecnología GSM</h2>
+       <p> Con la llegada de la tecnología de Segunda Generación al mundo de las comunicaciones móviles, también desembarcó en los dispositivos portátiles de telefonía celular el popular sistema GSM, siglas de su nombre en inglés Global System for Mobile Communications, que en español significa Sistema Global para las Comunicaciones.</p>
+       <h2>2.5G: La generación de transición </h2>
+       <p> Gracias a la llegada de la 2.5G, los dispositivos móviles incluyeron dos nuevos servicios. Por un lado el sistema denominado EMS, que básicamente se trataba de un servicio de mensajería mejorado, que entre sus prestaciones permitía incluir dentro de los mensajes algunas melodías e iconos. Para ello, los EMS fueron basados en lo que posteriormente serían los SMS. </p>
+       <h2>3G: La tercera generación</h2>
+       <p>Con el advenimiento de la Tercera Generación, fue posible poder contar con la posibilidad de conectarse a Internet con todas las ventajas que su utilización provee para los usuarios. </p>
+       <p>Gracias a todos estos avances, hoy es posible llegar a velocidades de transmisión de datos superiores a los 7.2 Mbits/s, lo que favoreció el surgimiento de novedosas implementaciones en el celular, tales como la descarga de contenidos de programas, servicios de videollamada, mensajería instantánea y la utilización del correo electrónico, entre muchas otras. 
+ </p>
+      <h2>4G: La cuarta generación </h2>
+      <p>La llegada al mercado de esta tecnología le ofrece al usuario una experiencia de uso absolutamente exitosa con cualquier prestación que solicite, con las ventajas que ofrece 4G asociadas a la velocidad que puede alcanzar, teóricamente 100 Mbits/s en movimiento hasta la increíble cifra de 1 Gb/s en reposo, podemos manejarnos con mucha más soltura que antes, y obtener beneficios casi imposibles con la anterior generación, 3G.</p>
+       <br>
+     </div>
+     <div>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('sust2','','imagenes/xd.jpg',1)"><img src="imagenes/lenovo.png" width="560" height="345" id="sust2"></a> </div>
+       <div>
+     </div>
+    </div>
+   </div>
+    </div>
+   
+    <div data-role="footer" data-theme="b" data-position="fixed">
+       <h4>Aplicacion Dos, FECHN</h4>
+       </div>
+    </div> 
+   </div>  
+   
+  <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b"> 
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Clasificacion de telefonos celulares</h1>
+   </div>
+   <div data-role="content" align="center">
+   <div>
+   <h2>Se clasifican en gamas de acuerdo a su potencia, velocidad, resistencia, funciones, diseño y precio.</h2>
+   </div>
+   </div>
+   <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1>GAMA BAJA</h1>
+      <div>
+      <div data-role="content" align="center">
+   <div>
+   <h2>Xiaomi REDMI 4 PRO</h2>
+   <p>Un Smartphone con buen procesador, con 16 o 32 Gb de almacenamiento a un precio demasiado accesible.</p>
+       <br>
+     </div>
+     <div>
+       <img src="imagenes/redmibaja.jpg" width="50%" height="50%">
+     </div>
+    </div>
+   </div>
+   </div>
+    </div>
+    <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1>GAMA MEDIA</h1>
+      <div>
+      <div data-role="content" align="center">
+   <div>
+   <h2>Huawei P9</h2>
+   <p>Buen procesador, con memoria expansible y lector de huella dactilar, con camara dual de 12MP y 8MP en la camara frontal.</p>
+       <br>
+     </div>
+     <div>
+       <img src="imagenes/p9.jpg" width="50%" height="50%">
+     </div>
+    </div>
+   </div>
+   </div>
+    </div>
+    <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1>GAMA ALTA</h1>
+      <div>
+      <div data-role="content" align="center">
+   <div>
+   <h2>Xiaomi MI MIX </h2>
+   <p> Destaca por ser casi pantalla, tiene un excelente procesador de ultima generacion y memoria expansible, Su precio es alto pero lo vale por que el telefono es excelente.</p>
+       <br>
+     </div>
+     <div>
+       <img src="imagenes/mixalta.jpg" width="50%" height="50%">
+     </div>
+    </div>
+   </div>
+   </div>
+    </div>
+    <div data-role="footer" data-theme="b" data-position="fixed">
+       <h4>Aplicacion Dos, FECHN</h4>
+       </div>
+    </div> 
+   </div>   
+   
+  <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b"> 
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Compañias telefonicas en México</h1>
+   </div>
+   <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1>Telcel</h1>
+      <div>
+      <div data-role="content" align="center">
+   <div>
+   
+        <h2>Cámbiate a Telcel.</h2>
+        <p>La mejor red.</p>
+       <br>
+     </div>
+     <div> <a href="http://www.telcel.com/"><img src="imagenes/telcel.jpg" width="50%" height="50%"></a>
+     </div>
+    </div>
+   </div>
+    </div>
+   </div>
+   <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1> AT&T. </h1>
+      <div>
+      <div data-role="content" align="center">
+   <div>
+   
+        <h2>La red más grande del mundo.</h2>
+       <br>
+     </div>
+     <div> <a href="https://www.att.com.mx/"><img src="imagenes/att_2016_logo_with_type.png" width="50%" height="50%"></a>
+     </div>
+    </div>
+   </div>
+    </div>
+   </div>
+   
+   <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1> Unefon </h1>
+      <div>
+      <div data-role="content" align="center">
+   <div>
+   
+        <h2>Con muy poco puedes recibir mucho.</h2>
+       <br>
+     </div>
+     <div> <a href="https://www.unefon.com.mx/"><img src="imagenes/unefon.jpg" width="50%" height="50%"></a>
+     </div>
+    </div>
+   </div>
+    </div>
+   </div>
+   
+   <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1> Movistar </h1>
+      <div>
+      <div data-role="content" align="center">
+   <div>
+   
+        <h2>Compartida la vida es más.</h2>
+       <br>
+     </div>
+     <div> <a href="http://www.movistar.com.mx/"><img src="imagenes/logomovi.jpg" width="50%" height="50%"></a>
+     </div>
+    </div>
+   </div>
+    </div>
+   </div>
+   
+    <div data-role="footer" data-theme="b" data-position="fixed">
+       <h4>Aplicacion Dos, FECHN</h4>
+       </div>
+    </div> 
+   </div>  
+   
+ <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b"> 
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Telefonos y proyectos a futuro</h1>
+   </div>
+    <div data-role="content" align="center">
+   <h2> Proyectos que cambiaran la telefonia celular</h2>
+   </div>
+   <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1> Nokia HumanForm </h1>
+      <div>
+      <div data-role="content" align="center">
+   <div>
+        <p>Nokia HumanForm es el desarrollo de un nuevo concepto de teléfono. Para empezar, la forma del equipo, alargada, abandona por completo el diseño que predomina hoy en el mercado. Ellos dicen que es un teléfono “humanizado” pero lo más sorprendente, además de su forma de gota de agua alargada, es que su estructura es flexible y transparente, y que a través de ella podemos manejar del equipo mediante gestos, retorciendo el terminal o con su carcasa completamente táctil.</P>
+       <br>
+     </div>
+     <div> 
+     <img src="imagenes/humanform.jpg" width="50%" height="50%">
+     </div>
+    </div>
+   </div>
+    </div>
+   </div>
+   
+   <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1> Nokia Morph </h1>
+      <div>
+      <div data-role="content" align="center">
+   <div>
+        <p>El Nokia Morph sería un móvil flexible, que podría tanto estirarse como plegarse.
+        Recién habilitada con materiales flexibles y transparentes mezclar más a la perfección con la forma en que vivimos. Dispositivos de ser auto-limpieza y auto-preservación electrónica transparente que ofrece una estética completamente nueva dimensión. Construido en la absorción solar puede cargar un dispositivo, mientras que las baterías se hacen más pequeños, más duraderos y más rápido para cargar. Sensores integrados podría permitir a nosotros para aprender más sobre el medio ambiente que nos rodea, que nos posibilita tomar mejores decisiones. Recargable a través de energia solar. </p>
+       <br>
+     </div>
+     <div> 
+     <img src="imagenes/morph.jpg" width="50%" height="50%">
+     </div>
+    </div>
+   </div>
+    </div>
+   </div>
+   
+   <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1> Samsung que se dobla a la mitad </h1>
+      <div>
+      <div data-role="content" align="center">
+   <div>
+        <p>Lee Chang-hoon, vicepresidente en Samsung Display, y responsable de estrategias, ha informado que el factor de forma más interesante para poner en práctica la tecnología flexibles es el de un smartphone que se dobla por la mitad.
+</p>
+       <br>
+     </div>
+     <div> 
+     <img src="imagenes/mitad.png" width="50%" height="50%">
+     </div>
+    </div>
+   </div>
+    </div>
+   </div>
+   
+   <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+     <h1> Proyecto Ara </h1>
+      <div>
+      <div data-role="content" align="center">
+   <div>
+        <p>Proyecto Ara es el nombre en clave de una iniciativa de Google que tiene como objetivo desarrollar una plataforma de hardware libre para la creación de los teléfonos inteligentes modulares. La plataforma incluirá un marco estructural con módulos de teléfonos inteligentes a elección del propietario, tales como una pantalla, un teclado o una batería adicional.
+        Google quiere bajar la barrera para entrar a la industria de desarrollo de hardware para teléfonos y que haya millones de desarrolladores en lugar de unas pocas grandes compañías produciendo.</p>
+       <br>
+     </div>
+     <div> <img src="imagenes/ara.jpg" width="50%" height="50%">
+     </div>
+    </div>
+   </div>
+    </div>
+   </div>
+   
+    <div data-role="footer" data-theme="b" data-position="fixed">
+       <h4>Aplicacion Dos, FECHN</h4>
+       </div>
+    </div>    
+      
+</body>
+</html>
